@@ -1,0 +1,582 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  font: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+header {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  height: 248px;
+  background-image: url("../images/header_bg.jpg"); }
+
+.logo {
+  position: absolute;
+  width: 210px;
+  height: 50px;
+  top: 33px;
+  left: 154px; }
+
+.logo__name {
+  font-size: 33.97px;
+  color: #52450a;
+  font-family: "MyriadProRegular";
+  letter-spacing: -1px; }
+
+.logo__company {
+  font-size: 24.67px;
+  color: #52450a;
+  font-family: "MyriadProRegular";
+  margin-left: 18px;
+  line-height: 34px;
+  height: 50px;
+  width: 100px;
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: -1px; }
+
+.rss {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  top: 46px;
+  right: 129px; }
+
+.site_map_link {
+  font-size: 13px;
+  font-family: "ArialRegular"; }
+
+.palka {
+  margin: 0 2px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.rss_link {
+  font-size: 13px;
+  font-family: "ArialRegular"; }
+
+.menu_bg {
+  position: absolute;
+  top: 93px;
+  left: 129px;
+  width: 931px;
+  height: 40px;
+  background-image: url("../images/menu_bg.jpg"); }
+
+nav {
+  position: absolute;
+  top: 94px;
+  left: 127px; }
+
+.nav-li {
+  display: inline-block;
+  vertical-align: top;
+  width: 156px;
+  height: 40px;
+  text-align: center; }
+
+.nav-link {
+  font-size: 13px;
+  font-family: "MyriadProRegular";
+  color: #52450a;
+  line-height: 37px;
+  display: block;
+  width: 155px;
+  height: 40px;
+  text-decoration: none; }
+
+/*
+.margin_link_1 {
+    margin-left: 55px;
+}
+
+.margin_link_2 {
+    margin-left: 45px;
+    word-spacing: -2.5px;
+}
+.margin_link_3 {
+    margin-left: 45px;
+}
+.margin_link_4 {
+    margin-left: 57px;
+}
+.margin_link_5 {
+    margin-left: 54px;
+}
+.margin_link_6 {
+    margin-left: 43px;
+}*/
+.content {
+  width: 932px;
+  height: 156px;
+  margin: 0 auto;
+  position: relative; }
+
+.bg_blue {
+  top: -75px;
+  left: -4px;
+  margin: 0 auto;
+  position: relative;
+  width: 891px;
+  height: 206px;
+  background-image: url("../images/bg_blue.jpg"); }
+
+.h3_block {
+  position: absolute;
+  width: 340px;
+  height: 40px;
+  top: 26px;
+  left: 35px; }
+
+.h3 {
+  font-size: 28.86px;
+  color: #52450a;
+  font-family: "MyriadProRegular";
+  font-weight: 100;
+  letter-spacing: -0.8px; }
+
+.robot {
+  position: absolute;
+  width: 300px;
+  height: 292px;
+  background-image: url("../images/robot.png");
+  bottom: -21px;
+  right: 4px; }
+
+.cake {
+  position: absolute;
+  width: 466px;
+  height: 300px;
+  background-image: url("../images/cake.png");
+  bottom: -14px;
+  right: 4px;
+  z-index: 10; }
+
+.some-text {
+  position: absolute;
+  width: 365px;
+  height: 102px;
+  background: white;
+  top: -9px;
+  left: 49px;
+  border-radius: 10px; }
+
+.quote {
+  font-size: 68.55px;
+  color: #bae9ef;
+  font-family: "MyriadProRegular";
+  line-height: 94px;
+  margin-left: 4px; }
+
+.quote2 {
+  font-size: 68.55px;
+  color: #bae9ef;
+  font-family: "MyriadProRegular";
+  margin-left: 326px;
+  line-height: 8px; }
+
+.some-text-p {
+  font-size: 14px;
+  color: #2e586d;
+  font-family: "MyriadProRegular";
+  font-style: italic;
+  line-height: 18.55px;
+  margin-left: 39px;
+  margin-top: -79px;
+  margin-right: 10px;
+  word-spacing: 3px; }
+
+.slogan {
+  font-size: 12px;
+  font-weight: 700;
+  color: #2e586d;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 40px;
+  line-height: 26px;
+  word-spacing: 3px; }
+
+.middle {
+  display: inline-block;
+  vertical-align: top;
+  width: 290px;
+  height: 200px;
+  position: relative;
+  border-radius: 5px;
+  background: #f1f5f6;
+  border: 1px solid #e5ecee; }
+
+.middle-block {
+  width: 990px;
+  height: 200px;
+  position: relative;
+  left: 40px;
+  margin: 0 auto; }
+
+.middle-1 {
+  margin-left: 5px;
+  vertical-align: top; }
+
+.middle-2 {
+  margin-left: 8px;
+  vertical-align: top; }
+
+.middle-3 {
+  margin-left: 8px;
+  vertical-align: top;
+  width: 380px;
+  background: transparent;
+  border: none; }
+
+.say {
+  font-size: 25px;
+  color: #52450a;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 22px;
+  line-height: 54px;
+  word-spacing: -2px; }
+
+.say-p {
+  font-size: 12px;
+  color: #2e586d;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 23px;
+  margin-right: 115px;
+  word-spacing: 3px;
+  line-height: 18px; }
+
+.middle-link {
+  font-size: 12px;
+  color: #2e586d;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 800;
+  margin-left: 24px;
+  line-height: 52px;
+  word-spacing: 2px; }
+
+.choko {
+  position: absolute;
+  top: 63px;
+  right: 14px;
+  width: 91px;
+  height: 113px;
+  background-image: url("../images/02754_03.png"); }
+
+.milk {
+  position: absolute;
+  top: 63px;
+  right: 27px;
+  width: 73px;
+  height: 119px;
+  background-image: url("../images/02754_05.png"); }
+
+.middle-span {
+  font-size: 11px;
+  color: #2e586d;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 800;
+  margin-top: -4px;
+  margin-left: 30px;
+  word-spacing: 2px;
+  letter-spacing: 0.3px; }
+
+.say-p-3 {
+  margin-left: 29px;
+  margin-top: 1px; }
+
+.middle-link-3 {
+  margin-left: 31px;
+  position: relative;
+  top: -20px; }
+
+.middle-3-2 {
+  width: 380px;
+  height: 100px;
+  margin-left: -1px;
+  margin-top: -12px; }
+
+.ert {
+  position: absolute;
+  width: 301px;
+  height: 48px;
+  background: #fbe46a;
+  top: 71px;
+  left: 31px;
+  border-radius: 5px; }
+
+.ert-p {
+  font-size: 12px;
+  color: #52450a;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 12px;
+  margin-top: 8px;
+  word-spacing: 3px;
+  line-height: 16px; }
+
+footer {
+  position: relative;
+  margin: 0 auto;
+  width: 931px;
+  height: 267px;
+  background-image: url("../images/footer-bg_03.jpg");
+  margin-top: 30px; }
+
+.our-mission {
+  display: inline-block;  
+  vertical-align: top;
+  width: 470px;
+  height: 220px;
+ }
+
+.zagolovok {
+  display: inline;
+  font-family: Georgia;
+  color: #52450a;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 101.759px;
+  text-align: left;
+  margin-left: 38px;
+  word-spacing: 2px;
+}
+
+.zagolovok_2 {
+  margin-left: 9px;
+}
+
+.footer-ul {
+    margin-top: 24px;
+    margin-left: 44px;
+    word-spacing: 2px;
+}
+
+.footer-li {
+  font-family: Georgia;
+  color: #52450a;
+  font-size: 12px;
+  line-height: 23px;
+  font-style: italic;
+}
+
+.footer-input {
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    width: 460px;
+    height: 220px;
+
+}
+
+.write_us {
+    display: inline;
+    font-family: Georgia;
+    color: #52450a;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.your_message {
+    position: absolute;
+    display: inline-block;
+    font-family: Georgia;
+    color: #52450a;
+    font-size: 12px;
+    font-weight: 800;
+    left: 11px;
+    top: 85px;
+    width:40px;
+}
+.your_mail {
+    position: absolute;
+    display: inline-block;
+    font-family: Georgia;
+    color: #52450a;
+    font-size: 12px;
+    left: 12px;
+    top: 156px;
+    width:40px;
+}
+
+
+#qwe {
+    font-family: Georgia;
+    color: #52450a;
+    font-size: 12px;
+    width: 335px;
+    height: 57px;
+    border: 1px solid #f4d00c;
+    margin-left: 86px;
+    margin-top: -20px;
+    background: #fdf6ce;
+}
+
+#wer {
+    width: 214px;
+    height: 31px;
+    border: 2px solid #f4d00c;
+    margin-left: 85px;
+    margin-top: 9px;
+    background: #fdf6ce;
+    }
+    
+#ert {
+    width: 80px;
+    height: 30px;
+    border:1px solid #f4d00c;
+    margin-left: 10px;
+    margin-top:10px;
+    border-radius: 5px;
+    background: #ffe32f;
+    cursor: pointer;
+}
+
+.copyright {
+  
+  margin: 0 auto;
+  width: 851px;
+  height: 45px;
+  background: transparent;
+  border-top:1px solid yellow;
+
+}
+
+.cop-p {
+    
+    display: inline-block;
+    font-family: Georgia;
+    color: #52450a;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+a {
+  color: #184072; }
+
+a:visited {
+  color: #184072; }
+
+a:active {
+  color: lightblue; }
+
+/* ╨Ъ╨╛╨┤ ╨┤╨╗╤П ╨┐╨╛╨┤╨║╨╗╤О╤З╨╡╨╜╨╕╤П ╤И╤А╨╕╤Д╤В╨░ ╨▓ /css/stylename.css */
+/* font-family: "MyriadProRegular"; */
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "MyriadProBold"; */
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("../fonts/MyriadProBold/MyriadProBold.eot");
+  src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"), url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "MyriadProItalic"; */
+@font-face {
+  font-family: "MyriadProItalic";
+  src: url("../fonts/MyriadProItalic/MyriadProItalic.eot");
+  src: url("../fonts/MyriadProItalic/MyriadProItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProItalic/MyriadProItalic.woff") format("woff"), url("../fonts/MyriadProItalic/MyriadProItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "MyriadProSemiBold"; */
+@font-face {
+  font-family: "MyriadProSemiBold";
+  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
+  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"), url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "MyriadProBoldItalic"; */
+@font-face {
+  font-family: "MyriadProBoldItalic";
+  src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot");
+  src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff"), url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "MyriadProSemiBoldItalic"; */
+@font-face {
+  font-family: "MyriadProSemiBoldItalic";
+  src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot");
+  src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff"), url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "ArialRegular"; */
+@font-face {
+  font-family: "ArialRegular";
+  src: url("../fonts/ArialRegular/ArialRegular.eot");
+  src: url("../fonts/ArialRegular/ArialRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialRegular/ArialRegular.woff") format("woff"), url("../fonts/ArialRegular/ArialRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "ArialBold"; */
+@font-face {
+  font-family: "ArialBold";
+  src: url("../fonts/ArialBold/ArialBold.eot");
+  src: url("../fonts/ArialBold/ArialBold.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialBold/ArialBold.woff") format("woff"), url("../fonts/ArialBold/ArialBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "ArialItalic"; */
+@font-face {
+  font-family: "ArialItalic";
+  src: url("../fonts/ArialItalic/ArialItalic.eot");
+  src: url("../fonts/ArialItalic/ArialItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialItalic/ArialItalic.woff") format("woff"), url("../fonts/ArialItalic/ArialItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "ArialBlack"; */
+@font-face {
+  font-family: "ArialBlack";
+  src: url("../fonts/ArialBlack/ArialBlack.eot");
+  src: url("../fonts/ArialBlack/ArialBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialBlack/ArialBlack.woff") format("woff"), url("../fonts/ArialBlack/ArialBlack.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "ArialBoldItalic"; */
+@font-face {
+  font-family: "ArialBoldItalic";
+  src: url("../fonts/ArialBoldItalic/ArialBoldItalic.eot");
+  src: url("../fonts/ArialBoldItalic/ArialBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialBoldItalic/ArialBoldItalic.woff") format("woff"), url("../fonts/ArialBoldItalic/ArialBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/*# sourceMappingURL=styles.css.map */
